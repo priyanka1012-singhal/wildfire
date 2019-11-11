@@ -24,6 +24,7 @@ const useStyles = makeStyles(theme => ({
   },
   title: {
     display: "none",
+    color: "#ff9800",
     [theme.breakpoints.up("sm")]: {
       display: "block"
     }
@@ -171,7 +172,7 @@ export default function PrimarySearchAppBar() {
             <MenuIcon />
           </IconButton>
           <Typography className={classes.title} variant="h6" noWrap>
-            WildFire Prediction System
+            Wildfire Prediction System
           </Typography>
           <div className={classes.search}>
             <div className={classes.searchIcon}>

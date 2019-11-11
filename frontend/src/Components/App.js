@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from "react";
 import "./App.css";
-import { Header, Footer } from "./Layouts";
+import { Header } from "./Layouts";
 import Body from "./Body";
 import { MenuList } from "../store";
 
@@ -10,7 +10,6 @@ class App extends Component {
       <Fragment>
         <Header></Header>
         <Body menuList={MenuList}></Body>
-        <Footer></Footer>
       </Fragment>
     );
   }

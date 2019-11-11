@@ -15,8 +15,6 @@ const theme = createMuiTheme({
   }
 });
 
-console.log(theme);
-
 //render App component on the root element
 ReactDOM.render(
   <MuiThemeProvider theme={theme}>

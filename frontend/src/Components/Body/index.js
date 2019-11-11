@@ -4,19 +4,30 @@ import LeftPane from "./LeftPane";
 import RightPane from "./RightPane";
 
 const style = {
-  leftpaper: { padding: 20, paddingRight: 10, marginTop: 10, marginBottom: 10 },
-  rightpaper: { padding: 20, marginLeft: 30, marginTop: 10, marginBottom: 10 }
+  leftpaper: {
+    height: 800,
+    padding: 20,
+    marginTop: 10,
+    marginBottom: 10
+  },
+  rightpaper: {
+    height: 800,
+    padding: 20,
+    marginTop: 10,
+    marginBottom: 10
+  }
 };
 
 export default function body(props) {
   return (
-    <Grid container>
-      <Grid item sm>
+    <Grid container spacing={2}>
+      <Grid item xs={3}>
         <LeftPane menuList={props.menuList} styles={style.leftpaper} />
       </Grid>
-      <Grid item sm>
+      <Grid item xs={7}>
         <RightPane styles={style.rightpaper} />
       </Grid>
+      <Grid item xs></Grid>
     </Grid>
   );
 }

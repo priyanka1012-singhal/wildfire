@@ -1,12 +1,13 @@
-import React, { Fragment } from "react";
-import { Paper, Typography } from "@material-ui/core";
+import React from "react";
+import { Paper, Grid } from "@material-ui/core";
+import Map from "../Map";
 
 export default props => (
   <Paper style={props.styles}>
-    <Fragment>
-      <Typography variant="h6" style={{ textTransform: "capitalize" }}>
-        Welcome!
-      </Typography>
-    </Fragment>
+    <Grid container>
+      <Grid item xs={12}>
+        <Map style={{ height: 800 }}></Map>
+      </Grid>
+    </Grid>
   </Paper>
 );

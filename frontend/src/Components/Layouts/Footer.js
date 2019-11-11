@@ -1,7 +1,7 @@
-import React from "react";
+import React, { Fragment } from "react";
 
 export default props => (
-  <div>
-    <h1>Footer-TODO</h1>
-  </div>
+  <Fragment>
+    <h6>Footer</h6>
+  </Fragment>
 );
