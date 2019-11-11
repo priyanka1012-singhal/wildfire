@@ -6,11 +6,7 @@ export default function leftPane(props) {
     <Paper style={props.styles}>
       {props.menuList.map(menuitem => (
         <Fragment>
-          <Typography
-            variant="h6"
-            style={{ textTransform: "capitalize" }}
-            key={menuitem}
-          >
+          <Typography variant="h6" style={{ textTransform: "capitalize" }}>
             {menuitem}
           </Typography>
         </Fragment>
